@@ -1,0 +1,30 @@
+package br.eti.webstuff.register.dao;
+
+public class GenericDAO implements IGenericsDao{
+
+	@Override
+	public <T> void createEntity(T entity) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public <T> T searchEntityById(Class<T> entityClass, Object id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public <T> void updateEntity(T entity) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public <T> void deleteEntity(Class<T> entityClass, Object id) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+
+}

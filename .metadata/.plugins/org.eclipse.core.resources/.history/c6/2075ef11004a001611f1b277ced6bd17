@@ -1,0 +1,12 @@
+package br.eti.webstuff.register.database;
+
+public class TGenericDAO {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+
+	}
+
+}

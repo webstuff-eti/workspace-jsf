@@ -1,0 +1,12 @@
+package br.eti.webstuff.register.database;
+
+
+
+public class TGenericDAO {
+	
+	@Test
+	public void deveEncontrarPeloNomeTecnologia(){
+		
+	}
+
+}

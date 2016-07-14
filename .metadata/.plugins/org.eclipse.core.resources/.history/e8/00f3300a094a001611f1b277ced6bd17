@@ -1,0 +1,35 @@
+package br.eti.webstuff.register.tests;
+
+import static org.junit.Assert.assertEquals;
+
+
+import org.junit.Test;
+
+import br.eti.webstuff.register.dao.CompetenceDAO;
+import br.eti.webstuff.register.model.Competence;
+import br.eti.webstuff.register.tests.build.Utilities;
+
+
+
+public class TGenericDAO {
+	
+	@Test
+	public void deveEncontrarPeloNomeTecnologia(){
+		
+		CompetenceDAO competenceDAO = new CompetenceDAO();
+		
+		Utilities ut = new Utilities();
+		Competence competence = ut.generateCompetence("mockito-core-1.8.5.jar", "17/01/2016");
+		
+		competenceDAO.createEntity(competence);
+		
+		assertEquals("mockito-core-1.8.5.jar", competence.getTecnologia());
+		assertEquals("17/01/2016", ut.parseDataToString ( competence.getDataLancamento()) ); 
+		
+		System.out.println(competence.getTecnologia());
+		System.out.println(competence.getDataLancamento());
+	}
+	
+	
+
+}

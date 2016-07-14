@@ -16,3 +16,14 @@
 1468461870319	Copy compilation unit
 1468461874302	Delete element
 1468461879411	Delete element
+1468523508238	Rename type 'GenericDAO'
+1468524678685	Delete element
+1468525257889	Delete element
+1468527484306	Delete element
+1468528180216	Rename package 'br.eti.webstuff.register.database'
+1468528290712	Copy package
+1468528299040	Delete element
+1468528308889	Rename package 'br.eti.webstuff.register.tests.build.copy'
+1468531283860	Delete element
+1468532334089	Delete element
+1468532378792	Rename type 'TGenericDAO'

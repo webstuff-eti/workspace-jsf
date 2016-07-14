@@ -1,2 +1,30 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="javax.persistence.Entity"/>
+<fullyQualifiedTypeName name="javax.persistence.GeneratedValue"/>
+<fullyQualifiedTypeName name="javax.persistence.Id"/>
+<fullyQualifiedTypeName name="javax.persistence.GenerationType"/>
+<fullyQualifiedTypeName name="javax.persistence.TemporalType"/>
+<fullyQualifiedTypeName name="br.eti.webstuff.utils.enumeration.ELevel"/>
+<fullyQualifiedTypeName name="javax.persistence.Enumerated"/>
+<fullyQualifiedTypeName name="javax.persistence.EnumType"/>
+<fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="br.eti.webstuff.model.Competence"/>
+<fullyQualifiedTypeName name="br.eti.webstuff.dao.EntityManagerProducer"/>
+<fullyQualifiedTypeName name="br.eti.webstuff.register.dao.IGenericsDao"/>
+<fullyQualifiedTypeName name="br.eti.webstuff.register.dao.GenericDAO"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="javax.persistence.Query"/>
+<fullyQualifiedTypeName name="javax.persistence.NamedQuery"/>
+<fullyQualifiedTypeName name="javax.persistence.Temporal"/>
+<fullyQualifiedTypeName name="javax.persistence.EntityManager"/>
+<fullyQualifiedTypeName name="org.mockito.Mockito"/>
+<fullyQualifiedTypeName name="br.eti.webstuff.register.dao.EntityManagerProducer"/>
+<fullyQualifiedTypeName name="org.hibernate.Query"/>
+<fullyQualifiedTypeName name="br.eti.webstuff.register.model.Competence"/>
+<fullyQualifiedTypeName name="br.eti.webstuff.register.dao.CompetenceDAO"/>
+<fullyQualifiedTypeName name="java.util.Calendar"/>
+<fullyQualifiedTypeName name="java.util.GregorianCalendar"/>
+<fullyQualifiedTypeName name="br.eti.webstuff.register.tests.build.Utilities"/>
+</qualifiedTypeNameHistroy>
