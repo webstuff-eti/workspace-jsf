@@ -1,0 +1,26 @@
+package br.eti.webstuff.model.competence;
+
+import java.util.Calendar;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
+
+import br.eti.webstuff.utils.enumeration.ELevel;
+
+@Entity
+public class Competence {
+	
+	@Id @GeneratedValue(strategy=GenerationType.IDENTITY)
+	private Integer id;
+	
+	private String tecnologia;
+	private ELevel level;
+	
+	@Temporal(TemporalType.DATE)
+	private Calendar dataLancamento = Calendar.getInstance();
+
+}

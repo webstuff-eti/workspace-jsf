@@ -1,0 +1,32 @@
+package br.eti.webstuff.utils;
+
+import javax.persistence.EntityManager;
+
+import br.eti.webstuff.dao.EntityManagerProducer;
+import br.eti.webstuff.model.Competence;
+
+public class InsertDataBase {
+
+	public static void main(String[] args) {
+		
+		EntityManager entityManager = new EntityManagerProducer().getEntityManager();
+		
+		entityManager.getTransaction().begin();
+		
+	
+		
+		
+		
+		
+		
+		
+		private static Competence createCompetence(String tecnologia) {
+			Competence competence = new Competence();
+			competence.setNome(tecnologia);
+			return competence;
+		}
+		
+
+	}
+
+}

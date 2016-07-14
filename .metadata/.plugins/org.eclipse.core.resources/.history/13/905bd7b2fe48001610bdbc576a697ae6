@@ -1,0 +1,5 @@
+package br.eti.webstuff.utils.enumeration;
+
+public enum ELevel {
+
+}
