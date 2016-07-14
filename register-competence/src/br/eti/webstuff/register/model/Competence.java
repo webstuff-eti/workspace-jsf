@@ -6,9 +6,13 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.NamedQuery;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
+//@NamedQueries({
+@NamedQuery(name = "Competence.consultAll", query= "SELECT c FROM Competence c")  
+//})
 
 @Entity
 public class Competence {
