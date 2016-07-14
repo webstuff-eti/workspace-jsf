@@ -1,0 +1,9 @@
+package br.eti.webstuff.utils.enumeration;
+
+public enum ELevel {
+	                TRAINEE,
+                    BEGINNER,
+                    INTERMEDIATE,
+                    SENIOR,
+                    SPECIALIST;
+}
