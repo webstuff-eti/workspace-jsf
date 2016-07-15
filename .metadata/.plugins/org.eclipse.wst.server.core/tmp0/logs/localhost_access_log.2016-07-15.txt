@@ -101,3 +101,12 @@
 0:0:0:0:0:0:0:1 - - [15/Jul/2016:17:15:34 -0300] "POST /register-competence/competence.xhtml HTTP/1.1" 302 -
 0:0:0:0:0:0:0:1 - - [15/Jul/2016:17:15:34 -0300] "GET /register-competence/competence.xhtml HTTP/1.1" 200 2761
 0:0:0:0:0:0:0:1 - - [15/Jul/2016:17:15:36 -0300] "POST /register-competence/competence.xhtml HTTP/1.1" 200 2281
+127.0.0.1 - - [15/Jul/2016:17:43:49 -0300] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [15/Jul/2016:17:43:50 -0300] "GET /register-competence/ HTTP/1.1" 404 991
+0:0:0:0:0:0:0:1 - - [15/Jul/2016:17:44:00 -0300] "GET /register-competence/competence.xhtml HTTP/1.1" 200 2285
+0:0:0:0:0:0:0:1 - - [15/Jul/2016:17:44:07 -0300] "POST /register-competence/competence.xhtml HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [15/Jul/2016:17:44:07 -0300] "GET /register-competence/competence.xhtml HTTP/1.1" 200 2756
+0:0:0:0:0:0:0:1 - - [15/Jul/2016:17:44:08 -0300] "POST /register-competence/competence.xhtml HTTP/1.1" 200 2770
+0:0:0:0:0:0:0:1 - - [15/Jul/2016:17:44:12 -0300] "POST /register-competence/competence.xhtml HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [15/Jul/2016:17:44:12 -0300] "GET /register-competence/competence.xhtml HTTP/1.1" 200 2756
+0:0:0:0:0:0:0:1 - - [15/Jul/2016:17:44:14 -0300] "POST /register-competence/competence.xhtml HTTP/1.1" 200 2283
