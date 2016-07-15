@@ -1,0 +1,52 @@
+package br.eti.webstuff.register.bean;
+
+import javax.annotation.ManagedBean;
+import javax.faces.view.ViewScoped;
+
+import br.eti.webstuff.register.dao.CompetenceDAO;
+import br.eti.webstuff.register.model.Competence;
+
+
+@ManagedBean
+@ViewScoped
+public class CompetenceBean {
+	
+	private Competence competence = new Competence();
+
+	public Competence getCompetence() {
+		return competence;
+	}
+	
+	
+	
+	private Integer competenceId;
+
+	public Integer getCompetenceId() {
+		return competenceId;
+	}
+	public void setCompetenceId(Integer competenceId) {
+		this.competenceId = competenceId;
+	}
+	
+	
+	
+	public void competenceById() {
+		
+		CompetenceDAO dao = new CompetenceDAO();
+		this.competence = new 
+	    this.autor = new DAO<Autor>(Autor.class).buscaPorId(autorId);
+	}
+	
+	
+	
+	
+
+	/*
+	public void setCompetence(Competence competence) {
+		this.competence = competence;
+	}
+	*/
+	
+	
+
+}

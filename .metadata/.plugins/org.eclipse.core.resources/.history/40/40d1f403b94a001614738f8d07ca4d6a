@@ -1,0 +1,11 @@
+package br.eti.webstuff.register.bean;
+
+import javax.annotation.ManagedBean;
+import javax.faces.view.ViewScoped;
+
+
+@ManagedBean
+@ViewScoped
+public class CompetenceBean {
+
+}
