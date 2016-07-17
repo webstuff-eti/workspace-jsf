@@ -4,20 +4,28 @@ import static org.junit.Assert.assertEquals;
 
 
 
+
+
+
+
+import java.util.List;
+
 import javax.persistence.EntityManager;
 
 import org.junit.Test;
 
 import br.eti.webstuff.register.dao.CompetenceDAO;
 import br.eti.webstuff.register.dao.EntityManagerProducer;
+import br.eti.webstuff.register.dao.ProfessionalDAO;
 import br.eti.webstuff.register.model.Competence;
+import br.eti.webstuff.register.model.Professional;
 import br.eti.webstuff.register.tests.build.Utilities;
 
 
 
 public class GenericDAOTest {
 	
-	
+	/*
 	@Test
 	public void populaTabelaCompetence(){
 		
@@ -71,6 +79,29 @@ public class GenericDAOTest {
 		assertEquals("mockito-core-1.8.5.jar", competence.getTecnologia());
 		assertEquals("17/01/2016", Utilities.parseDataToString ( competence.getDataLancamento()) ); 
 	}
+   */	
+	
+	
+	@SuppressWarnings("unchecked")
+	@Test
+	public void deveEncontrarPeloNomeProfissional(){
+		
+		ProfessionalDAO professionalDAO = new ProfessionalDAO();
+		CompetenceDAO competenceDAO = new CompetenceDAO();
+		
+		List<Competence> competencies = null;
+		
+		competencies = (List<Competence>) competenceDAO.listCompetencies();
+		
+		Professional professional = Utilities.generateProfessional("Tiago Tibães", "Developer Java", competencies);
+		
+		professionalDAO.createEntity(professional);
+		
+		assertEquals("Tiago Tibães", professional.getNome());
+		assertEquals("Developer Java",  professional.getSetor() ); 
+	}
+	
+	
 	
 	
 

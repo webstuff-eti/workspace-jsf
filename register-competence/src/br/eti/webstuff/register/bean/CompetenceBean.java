@@ -52,16 +52,16 @@ public class CompetenceBean {
 			dao.updateEntity(this.competence);
 		}
 		
-		this.competence = new Competence();
+		//this.competence = new Competence();
 		
-		return "competence?faces-redirect=true";
+		return "professional?faces-redirect=true";
 	}
     
     
 	public List<Competence> getSkills() {
 		
 		CompetenceDAO dao = new CompetenceDAO();
-		List<Competence> listSkills = dao.listSkills();
+		List<Competence> listSkills = dao.listCompetencies();
 		
 		return listSkills;
 	}

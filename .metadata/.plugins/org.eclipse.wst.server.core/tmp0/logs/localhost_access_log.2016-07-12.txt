@@ -1,7 +1,0 @@
-127.0.0.1 - - [12/Jul/2016:14:29:32 -0300] "GET / HTTP/1.1" 404 951
-0:0:0:0:0:0:0:1 - - [12/Jul/2016:14:29:33 -0300] "GET /register-competence/ HTTP/1.1" 404 991
-0:0:0:0:0:0:0:1 - - [12/Jul/2016:14:30:20 -0300] "GET /register-competence/competence.xhtml HTTP/1.1" 500 4077
-0:0:0:0:0:0:0:1 - - [12/Jul/2016:14:30:32 -0300] "GET /register-competence/competence.xhtml HTTP/1.1" 500 4077
-127.0.0.1 - - [12/Jul/2016:14:31:26 -0300] "GET / HTTP/1.1" 404 951
-0:0:0:0:0:0:0:1 - - [12/Jul/2016:14:31:27 -0300] "GET /register-competence/ HTTP/1.1" 404 991
-0:0:0:0:0:0:0:1 - - [12/Jul/2016:14:31:39 -0300] "GET /register-competence/competence.xhtml HTTP/1.1" 200 897

@@ -27,3 +27,8 @@
 1468531283860	Delete element
 1468532334089	Delete element
 1468532378792	Rename type 'TGenericDAO'
+1468619721504	Copy package
+1468619730567	Delete element
+1468619746871	Rename package 'br.eti.webstuff.register.bean.copy'
+1468625804183	Rename type 'Profissional'
+1468691380416	Rename type 'Autorizador'
