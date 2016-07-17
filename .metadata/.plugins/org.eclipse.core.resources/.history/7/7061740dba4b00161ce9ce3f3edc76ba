@@ -16,9 +16,8 @@ import br.eti.webstuff.register.model.Professional;
 @ViewScoped
 public class ProfessionalBean {
 	
-	private           Integer  competenceId; 
-	private      Professional  professional = new Professional();
-	private List<Professional> professionals;
+	private      Integer competenceId; 
+	private Professional professional = new Professional();
 	
 	public Integer getCompetenceId() {
 		return competenceId;
@@ -33,14 +32,14 @@ public class ProfessionalBean {
 	
 	
 	
-	
+	private List<Professional> professionals;
 	
 	public List<Professional> getProfessionals() {
 		
 		ProfessionalDAO dao = new ProfessionalDAO();
-		//List<Professional>  professionals = null; //TODO: TESTAR, CASO DÊ ERRADO, RETIRAR
+		List<Professional>  professionals = null; //TODO: TESTAR, CASO DÊ ERRADO, RETIRAR
 		if(this.professionals == null){
-			this.professionals = dao.listAll(Professional.class);  //listSkills();
+			this.professionals = dao.listSkills();
 		}
 	    return professionals;
 	}
@@ -56,9 +55,6 @@ public class ProfessionalBean {
 		CompetenceDAO competenceDAO = new CompetenceDAO();
 		return  competenceDAO.listAll(Competence.class);
 	}
-	
-	
-	
 	
 	public List<Competence> getCompetenciesOfProfessional() {
 		List<Competence> competecies = professional.getCompetencies();
@@ -89,7 +85,7 @@ public class ProfessionalBean {
 			
 			
 			// Novo Profissional adicionado, listamos todos os Profissionais novamente
-	        this.professionals = dao.listAll(Professional.class);  //listaTodos();
+	        this.professionals = dao.listAll(Professional.class) ;  //listaTodos();
 			
 		}else{
 			dao = new ProfessionalDAO();
@@ -97,10 +93,10 @@ public class ProfessionalBean {
 		}
 	}
 	
-	// public void removeProfessional(Professional Professional, Integer id) {
+	
    public void removeProfessional(Professional Professional, Integer id) {
 	   ProfessionalDAO dao = new ProfessionalDAO();
-	   dao.deleteEntity(Professional.class, id);
+	   dao.deleteEntity(Competence.class, id);
    }
 	
    

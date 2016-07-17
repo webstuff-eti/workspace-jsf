@@ -38,7 +38,7 @@ public class ProfessionalBean {
 	public List<Professional> getProfessionals() {
 		
 		ProfessionalDAO dao = new ProfessionalDAO();
-		//List<Professional>  professionals = null; //TODO: TESTAR, CASO DÊ ERRADO, RETIRAR
+		List<Professional>  professionals = null; //TODO: TESTAR, CASO DÊ ERRADO, RETIRAR
 		if(this.professionals == null){
 			this.professionals = dao.listAll(Professional.class);  //listSkills();
 		}
@@ -97,10 +97,10 @@ public class ProfessionalBean {
 		}
 	}
 	
-	// public void removeProfessional(Professional Professional, Integer id) {
+	
    public void removeProfessional(Professional Professional, Integer id) {
 	   ProfessionalDAO dao = new ProfessionalDAO();
-	   dao.deleteEntity(Professional.class, id);
+	   dao.deleteEntity(Competence.class, id);
    }
 	
    

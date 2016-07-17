@@ -31,25 +31,12 @@
 				</h:selectOneMenu>
 				
 				<h:commandButton value="Registar" action="#{professionalBean.saveCompetence()}">
-				   <f:ajax execute="competence" render="tabelaCompetencies" />
 				</h:commandButton>
 				
 				<br />
 
 				<h:commandLink value="Cadastrar nova competência"
 					action="#{professionalBean.formCompetence}" immediate="true" />
-					
-				<h:dataTable id="tabelaCompetencies" value="#{professionalBean.competenciesOfProfessional}" var="competence" >
-					<h:column>
-						<h:outputText value="#{competence.tecnologia}" />
-					</h:column>
-					
-					<h:column>
-						<h:commandLink value="x"
-							action="#{professionalBean.removeCompetenceOfProfessional(competence)}" />
-					</h:column>
-					
-				</h:dataTable>	
 				
 		</fieldset>
 			

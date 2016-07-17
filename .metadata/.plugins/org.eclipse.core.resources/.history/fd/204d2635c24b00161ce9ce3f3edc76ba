@@ -97,10 +97,10 @@ public class ProfessionalBean {
 		}
 	}
 	
-	// public void removeProfessional(Professional Professional, Integer id) {
+	
    public void removeProfessional(Professional Professional, Integer id) {
 	   ProfessionalDAO dao = new ProfessionalDAO();
-	   dao.deleteEntity(Professional.class, id);
+	   dao.deleteEntity(Competence.class, id);
    }
 	
    

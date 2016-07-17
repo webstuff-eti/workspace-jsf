@@ -16,9 +16,8 @@ import br.eti.webstuff.register.model.Professional;
 @ViewScoped
 public class ProfessionalBean {
 	
-	private           Integer  competenceId; 
-	private      Professional  professional = new Professional();
-	private List<Professional> professionals;
+	private      Integer competenceId; 
+	private Professional professional = new Professional();
 	
 	public Integer getCompetenceId() {
 		return competenceId;
@@ -33,12 +32,12 @@ public class ProfessionalBean {
 	
 	
 	
-	
+	private List<Professional> professionals;
 	
 	public List<Professional> getProfessionals() {
 		
 		ProfessionalDAO dao = new ProfessionalDAO();
-		//List<Professional>  professionals = null; //TODO: TESTAR, CASO DÊ ERRADO, RETIRAR
+		List<Professional>  professionals = null; //TODO: TESTAR, CASO DÊ ERRADO, RETIRAR
 		if(this.professionals == null){
 			this.professionals = dao.listAll(Professional.class);  //listSkills();
 		}
@@ -57,10 +56,7 @@ public class ProfessionalBean {
 		return  competenceDAO.listAll(Competence.class);
 	}
 	
-	
-	
-	
-	public List<Competence> getCompetenciesOfProfessional() {
+	public List<Competence> getCompetenciesOFProfessional() {
 		List<Competence> competecies = professional.getCompetencies();
 		return competecies;
 	}
@@ -97,10 +93,10 @@ public class ProfessionalBean {
 		}
 	}
 	
-	// public void removeProfessional(Professional Professional, Integer id) {
+	
    public void removeProfessional(Professional Professional, Integer id) {
 	   ProfessionalDAO dao = new ProfessionalDAO();
-	   dao.deleteEntity(Professional.class, id);
+	   dao.deleteEntity(Competence.class, id);
    }
 	
    

@@ -31,7 +31,6 @@
 				</h:selectOneMenu>
 				
 				<h:commandButton value="Registar" action="#{professionalBean.saveCompetence()}">
-				   <f:ajax execute="competence" render="tabelaCompetencies" />
 				</h:commandButton>
 				
 				<br />

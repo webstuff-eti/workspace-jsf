@@ -31,7 +31,6 @@
 				</h:selectOneMenu>
 				
 				<h:commandButton value="Registar" action="#{professionalBean.saveCompetence()}">
-				   <f:ajax execute="competence" render="tabelaCompetencies" />
 				</h:commandButton>
 				
 				<br />
@@ -46,7 +45,7 @@
 					
 					<h:column>
 						<h:commandLink value="x"
-							action="#{professionalBean.removeCompetenceOfProfessional(competence)}" />
+							action="#{livroBean.removerAutorDoLivro(autor)}" />
 					</h:column>
 					
 				</h:dataTable>	
