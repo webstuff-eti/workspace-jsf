@@ -118,3 +118,8 @@
 0:0:0:0:0:0:0:1 - - [16/Jul/2016:23:05:36 -0300] "GET /register-competence/professional.xhtml HTTP/1.1" 200 4847
 0:0:0:0:0:0:0:1 - - [16/Jul/2016:23:05:43 -0300] "POST /register-competence/professional.xhtml HTTP/1.1" 200 5088
 0:0:0:0:0:0:0:1 - - [16/Jul/2016:23:05:52 -0300] "POST /register-competence/professional.xhtml HTTP/1.1" 200 4600
+127.0.0.1 - - [16/Jul/2016:23:36:35 -0300] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [16/Jul/2016:23:36:36 -0300] "GET /register-competence/ HTTP/1.1" 404 991
+0:0:0:0:0:0:0:1 - - [16/Jul/2016:23:36:48 -0300] "GET /register-competence/professional.xhtml HTTP/1.1" 200 4844
+0:0:0:0:0:0:0:1 - - [16/Jul/2016:23:36:53 -0300] "POST /register-competence/professional.xhtml HTTP/1.1" 200 4844
+0:0:0:0:0:0:0:1 - - [16/Jul/2016:23:36:58 -0300] "GET /register-competence/professional.xhtml HTTP/1.1" 200 4303

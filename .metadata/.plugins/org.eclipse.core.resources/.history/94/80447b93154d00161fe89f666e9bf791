@@ -27,7 +27,7 @@ public class Professional {
 	
 	public Professional() { //TODO: Atentar em colocar
 	}
-	
+
 	public Integer getId() {
 		return id;
 	}

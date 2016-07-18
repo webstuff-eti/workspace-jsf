@@ -2,10 +2,8 @@ package br.eti.webstuff.register.bean;
 
 import java.util.List;
 
-import javax.faces.application.FacesMessage;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ViewScoped;
-import javax.faces.context.FacesContext;
 
 import br.eti.webstuff.register.dao.CompetenceDAO;
 import br.eti.webstuff.register.dao.ProfessionalDAO;
@@ -31,33 +29,22 @@ public class ProfessionalBean {
 		return professional;
 	}
 	
-	
-	
-	
-	
 	public List<Professional> getProfessionals() {
-		
 		ProfessionalDAO dao = new ProfessionalDAO();
-		//List<Professional>  professionals = null; //TODO: TESTAR, CASO DÊ ERRADO, RETIRAR
 		if(this.professionals == null){
 			this.professionals = dao.listAll(Professional.class);  //listSkills();
 		}
 	    return professionals;
 	}
 	
-	
-	
 	public void loadProfessional(Professional professional) {
 		this.professional = professional;
 	}
 
-	
 	public List<Competence> getCompetencies() { //selectItems
 		CompetenceDAO competenceDAO = new CompetenceDAO();
 		return  competenceDAO.listAll(Competence.class);
 	}
-	
-	
 	
 	
 	public List<Competence> getCompetenciesOfProfessional() {
@@ -72,21 +59,13 @@ public class ProfessionalBean {
 
 		
 		if (professional.getCompetencies().isEmpty()) { 
-			// throw new RuntimeException
-			//FacesContext.getCurrentInstance().addMessage("professional",
-			//		new FacesMessage("Profissional, deve possui pelo menos uma competência!"));
-			//return; 
-			
 			throw new RuntimeException("Profissional, deve possui pelo menos uma competência!");
 		}
-		
-		
 		ProfessionalDAO dao = null;
 		
 		if(this.professional.getId() == null){
 			dao = new ProfessionalDAO();
 			dao.createEntity(this.professional);
-			
 			
 			// Novo Profissional adicionado, listamos todos os Profissionais novamente
 	        this.professionals = dao.listAll(Professional.class);  //listaTodos();
@@ -97,15 +76,11 @@ public class ProfessionalBean {
 		}
 	}
 	
-	// public void removeProfessional(Professional Professional, Integer id) {
    public void removeProfessional(Professional Professional, Integer id) {
 	   ProfessionalDAO dao = new ProfessionalDAO();
 	   dao.deleteEntity(Professional.class, id);
    }
 	
-   
-  
-   
    public void saveCompetence() {
 	   
 	   CompetenceDAO dao = new CompetenceDAO();
@@ -122,11 +97,9 @@ public class ProfessionalBean {
 		this.professional.removeCompetence(competence);
 	}
 	
-	
 	public String formCompetence() {
 		System.out.println("Chamando o formulário do Competence");
 		return "competence?faces-redirect=true";
 	}
-	
 
 }
