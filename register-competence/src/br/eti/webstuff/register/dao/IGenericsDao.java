@@ -1,5 +1,7 @@
 package br.eti.webstuff.register.dao;
 
+import java.util.List;
+
 
 public interface IGenericsDao {
 	
@@ -10,5 +12,7 @@ public interface IGenericsDao {
 	public abstract <T> void updateEntity(T entity);
 
 	public abstract <T> void deleteEntity(Class<T> entityClass, Object id);
+	
+	public abstract <T> List<T> listAll(Class<T> entityClass);
 	
 }

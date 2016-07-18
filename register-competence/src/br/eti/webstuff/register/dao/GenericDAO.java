@@ -1,10 +1,13 @@
 package br.eti.webstuff.register.dao;
 
 
+import java.util.List;
+
 import javax.persistence.EntityManager;
+import javax.persistence.criteria.CriteriaQuery;
 
 
-public abstract class GenericDAO implements IGenericsDao{
+public  abstract class GenericDAO implements IGenericsDao{
 	
 
 	@Override
@@ -56,6 +59,26 @@ public abstract class GenericDAO implements IGenericsDao{
 		entityManager.remove(entity);
 		entityManager.getTransaction().commit();
 		entityManager.close();
+	}
+	
+
+	@Override
+	public <T> List<T> listAll(Class<T> entityClass) {
+
+		EntityManager entityManager = new EntityManagerProducer().getEntityManager();	
+		
+		entityManager.getTransaction().begin();
+		entityManager.getTransaction();
+		
+		
+		CriteriaQuery<T> query = entityManager.getCriteriaBuilder().createQuery(entityClass);
+		query.select(query.from(entityClass));
+
+		List<T> list = entityManager.createQuery(query).getResultList();
+
+		entityManager.close();
+		return list;
+		
 	}
 
 	

@@ -9,7 +9,7 @@ import br.eti.webstuff.register.model.Competence;
 
 public class CompetenceDAO extends GenericDAO {
 
-	public List<Competence> listSkills() {
+	public List<Competence> listCompetencies() {
 
 		EntityManager entityManager = new EntityManagerProducer()
 				.getEntityManager();
