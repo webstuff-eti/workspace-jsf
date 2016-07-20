@@ -1,9 +1,0 @@
-package br.eti.webstuff.utils.enumeration;
-
-public class ELevel {
- 	                  TRAINEE,
-                      BEGINNER,
-                      INTERMEDIATE,
-                      SENIOR,
-                      SPECIALIST;
-}

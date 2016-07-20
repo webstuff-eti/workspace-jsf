@@ -1,6 +1,0 @@
-package br.eti.webstuff.register.dao;
-
-
-public class ProfessionalDAO extends GenericDAO {	
-
-}
