@@ -2,12 +2,12 @@ package br.eti.webstuff.register.bean;
 
 import java.util.List;
 
-
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ViewScoped;
 
 import br.eti.webstuff.register.dao.CompetenceDAO;
 import br.eti.webstuff.register.model.Competence;
+import br.eti.webstuff.register.model.Professional;
 
 
 @ManagedBean
@@ -46,14 +46,12 @@ public class CompetenceBean {
 		CompetenceDAO dao = new CompetenceDAO();
 		
 		if(this.competence.getId() == null){
-			
 			dao.createEntity(this.competence);
+			this.competence = new Competence(); // Limpa Camppo
 		}else{
 			dao.updateEntity(this.competence);
+			this.competence = new Competence(); // Limpa Camppo
 		}
-		
-		//this.competence = new Competence();
-		
 		return "professional?faces-redirect=true";
 	}
     
