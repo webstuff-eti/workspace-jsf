@@ -1,20 +1,2 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<<<<<<< HEAD
 <qualifiedTypeNameHistroy/>
-=======
-<qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="br.eti.webstuff.register.model.Professional"/>
-<fullyQualifiedTypeName name="java.util.ResourceBundle"/>
-<fullyQualifiedTypeName name="javax.faces.bean.ManagedBean"/>
-<fullyQualifiedTypeName name="javax.faces.bean.SessionScoped"/>
-<fullyQualifiedTypeName name="javax.faces.component.UIViewRoot"/>
-<fullyQualifiedTypeName name="javax.faces.context.FacesContext"/>
-<fullyQualifiedTypeName name="java.util.Properties"/>
-<fullyQualifiedTypeName name="java.io.FileInputStream"/>
-<fullyQualifiedTypeName name="java.io.IOException"/>
-<fullyQualifiedTypeName name="java.util.Locale"/>
-<fullyQualifiedTypeName name="javax.faces.application.FacesMessage"/>
-<fullyQualifiedTypeName name="java.io.Serializable"/>
-<fullyQualifiedTypeName name="br.eti.webstuff.register.utils.InformationMsn"/>
-</qualifiedTypeNameHistroy>
->>>>>>> dev
