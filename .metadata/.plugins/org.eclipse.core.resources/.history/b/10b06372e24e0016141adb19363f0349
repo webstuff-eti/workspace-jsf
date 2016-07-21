@@ -1,0 +1,7 @@
+package br.eti.webstuff.register.bean;
+
+@ManagedBean
+@SessionScoped
+public class InformationMsn {
+
+}
